@@ -1,8 +1,9 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPython, faBrain, faCode } from '@fortawesome/free-solid-svg-icons';
-import { faJava } from '@fortawesome/free-brands-svg-icons';
+// 🍎 faPython을 brands-svg-icons로 옮겼습니다.
+import { faJava, faPython } from '@fortawesome/free-brands-svg-icons'; 
+import { faBrain, faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
