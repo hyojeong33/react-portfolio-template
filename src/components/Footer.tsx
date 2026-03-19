@@ -7,10 +7,12 @@ function Footer() {
   return (
     <footer>
       <div>
-        <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-        <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+        {/* 🍎 본인의 GitHub 및 LinkedIn 주소 반영 */}
+        <a href="https://github.com/hyojeong33" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+        <a href="https://www.linkedin.com/in/hyojeong-lee-5299a0266" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
       </div>
-      <p>A portfolio designed & built by <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer">Yuji Sato</a> with 💜</p>
+      {/* 🍎 제작자 이름을 본인 이름으로 수정 */}
+      <p>A portfolio built by <a href="https://github.com/hyojeong33" target="_blank" rel="noreferrer">Hyojeong Lee</a> with 💜</p>
     </footer>
   );
 }

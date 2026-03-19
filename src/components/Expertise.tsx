@@ -1,44 +1,39 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faPython, faBrain, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faJava } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
     "Python",
+    "Java",
+    "C++",
+    "Data Structures",
+    "Algorithms",
     "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Git",
+    "React"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
+    "Data Analysis",
+    "Machine Learning",
+    "Statistics",
     "Pandas",
-    "Selenium",
+    "NumPy",
+    "Computational Methods",
+    "Technical Mentoring"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Behavioral Annotation",
+    "ELAN / ACLEW",
+    "EEG Data Processing",
+    "Linguistic Annotation",
+    "Human-Centered Systems",
+    "Research Ethics (CITI)"
 ];
 
 function Expertise() {
@@ -47,10 +42,11 @@ function Expertise() {
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
+                {/* Section 1: Core Software Development */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faCode} size="3x"/>
+                    <h3>Software Development</h3>
+                    <p>With a solid foundation from an Associate Degree in CS, I am proficient in C++, Java, and Python. I focus on solving real-world problems through algorithm optimization and reliable system design.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -59,10 +55,11 @@ function Expertise() {
                     </div>
                 </div>
 
+                {/* Section 2: Data Science & ML Specialization */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faPython} size="3x"/>
+                    <h3>Data Science & ML</h3>
+                    <p>As a Cognitive Science major specializing in ML and a former Undergraduate TA for 'Data Science in Practice' at UCSD, I have extensive experience in data-driven quality evaluation and statistical analysis.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -71,10 +68,11 @@ function Expertise() {
                     </div>
                 </div>
 
+                {/* Section 3: Cognitive Research & Analysis */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faBrain} size="3x"/>
+                    <h3>Cognitive Research</h3>
+                    <p>Currently a Research Assistant at the UCSD Cognitive Development Lab, I utilize ELAN and ACLEW frameworks for behavioral data analysis in infant-caregiver interaction studies.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (

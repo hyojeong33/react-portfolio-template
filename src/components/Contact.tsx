@@ -26,26 +26,8 @@ function Contact() {
     setMessageError(message === '');
 
     /* Uncomment below if you want to enable the emailJS */
-
     // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
-
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
+    //   ... (emailjs logic)
     // }
   };
 
@@ -54,7 +36,11 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          {/* 이력서 정보를 기반으로 안내 문구 수정 */}
+          <p>
+            Feel free to reach out for collaborations or inquiries! <br/>
+            Email: <b>lovelee010303@gmail.com</b> | Phone: <b>(858)-214-4823</b>
+          </p>
           <Box
             ref={form}
             component="form"
@@ -92,7 +78,7 @@ function Contact() {
               required
               id="outlined-multiline-static"
               label="Message"
-              placeholder="Send me any inquiries or questions"
+              placeholder="Tell me about your project or questions"
               multiline
               rows={10}
               className="body-form"
